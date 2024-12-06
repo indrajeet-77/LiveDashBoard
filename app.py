@@ -59,12 +59,12 @@ else:
             with fig_col1:
                 st.markdown("## First Chart")
                 fig1 = px.density_heatmap(data_frame=df, y='age_new', x="marital")
-                st.write(key=fig1)
+                st.write(fig1)
 
             with fig_col2:
                 st.markdown("### Second Chart")
                 fig2 = px.histogram(data_frame=df, x='age_new')
-                st.write(key=fig2)
+                st.write(fig2)
             # Creating two columns for charts
            
 
