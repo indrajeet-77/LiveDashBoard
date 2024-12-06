@@ -23,7 +23,7 @@ df = df[df["job"] == job_filter]
 if df.empty:
     st.warning("No data available for the selected job.")
 else:
-    for seconds in range(0, 200):
+    while True:
         df["age_new"] = df["age"] * np.random.choice((1, 5))
         df["balance_new"] = df["balance"] * np.random.choice(range(1, 5))
 
