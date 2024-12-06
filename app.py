@@ -24,7 +24,7 @@ if df.empty:
     st.warning("No data available for the selected job.")
 else:
     while True:
-        df["age_new"] = df["age"] * np.random.choice((0.5, 1.6))
+        df["age_new"] = df["age"] * np.random.choice((0.1, 1.6))
         df["balance_new"] = df["balance"] * np.random.choice(range(1, 5))
 
         # Creating KPIs
